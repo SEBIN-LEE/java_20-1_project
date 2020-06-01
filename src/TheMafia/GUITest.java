@@ -4,6 +4,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
+@SuppressWarnings("serial")
 public class GUITest extends JFrame {
 
 	private Image screenImage;
@@ -75,7 +76,7 @@ public class GUITest extends JFrame {
 
 			@Override
 			public void mousePressed(MouseEvent e) {
-				// °ÔÀÓ ½ÃÀÛ ÀÌº¥Æ®
+				// ê²Œì„ ì‹œì‘ ì´ë²¤íŠ¸
 			}
 
 		});
@@ -105,18 +106,18 @@ public class GUITest extends JFrame {
 
 	void createMenu() {
 		JMenuBar mb = new JMenuBar();
-		JMenu screenMenu = new JMenu("½ºÅä¸®");
+		JMenu screenMenu = new JMenu("ìŠ¤í† ë¦¬");
 
-		screenMenu.add(new JMenuItem("ÁøÇà»óÈ²"));
-		screenMenu.add(new JMenuItem("ºĞ±âÁ¡ ¼±ÅÃ"));
-		screenMenu.add(new JMenuItem("µîÀåÀÎ¹°"));
+		screenMenu.add(new JMenuItem("ì§„í–‰ìƒí™©"));
+		screenMenu.add(new JMenuItem("ë¶„ê¸°ì  ì„ íƒ"));
+		screenMenu.add(new JMenuItem("ë“±ì¥ì¸ë¬¼"));
 		screenMenu.addSeparator();
 		screenMenu.add(new JMenuItem("Exit"));
 
 		mb.add(screenMenu);
-		mb.add(new JMenu("ÆíÁı"));
-		mb.add(new JMenu("½ÇÇà"));
-		mb.add(new JMenu("µµ¿ò¸»"));
+		mb.add(new JMenu("í¸ì§‘"));
+		mb.add(new JMenu("ì‹¤í–‰"));
+		mb.add(new JMenu("ë„ì›€ë§"));
 		setJMenuBar(mb);
 	}
 
